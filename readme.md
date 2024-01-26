@@ -1,5 +1,6 @@
 # Bookstore Management System API Documentation
 
+
 github : https://github.com/r4ghuveer/Bookstore_Management_System/
 
 **Authentication**
@@ -13,6 +14,8 @@ Example:
 Write this code in your terminal and replace : username = r4ghuveer, password = bookstore
 
 Include the obtained token in the Authorization header of your requests.
+
+[Using Postman](#postman)
 
 ## Endpoints
 
@@ -173,3 +176,12 @@ Headers:
 - Authorization: Token <your_token>
 
 Response: No Content
+
+## Using Postman
+<a name="postman"></a>
+
+1) Download the BookStore_Management_20BCE10584.postman_collection.json file
+
+2) Open postman and import the file.
+
+3) Use the request (GET, DELETE, PUT, PATCH ...) which will be configured already.
