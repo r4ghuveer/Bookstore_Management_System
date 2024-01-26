@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "230c1970-ff4a-45c5-801b-518a5d32a857",
+		"name": "BookStore_Management_20BCE10584",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32578972",
+		"_collection_link": "https://lively-rocket-539387.postman.co/workspace/New-Team-Workspace~2bd07121-61d1-41e5-9ffb-fb9eb9a71a98/collection/32578972-230c1970-ff4a-45c5-801b-518a5d32a857?action=share&source=collection_link&creator=32578972"
+	},
+	"item": [
+		{
+			"name": "Add new book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token c286bf083400a6c660c8f8f1602748baccfc1111",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"Third_Book\",\"author\":\"Tony\",\"isbn\":\"a3\",\"price\":10,\"quantity\":11}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/books/"
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieving all books",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token c286bf083400a6c660c8f8f1602748baccfc1111",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:8000/api/books/"
+			},
+			"response": []
+		},
+		{
+			"name": "Specific book by ISBN.",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token c286bf083400a6c660c8f8f1602748baccfc1111",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:8000/api/books/a1/"
+			},
+			"response": []
+		},
+		{
+			"name": "Updating book details.",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token c286bf083400a6c660c8f8f1602748baccfc1111",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"The Great Gatsby\",\n  \"author\": \"F. Scott Fitzgerald\",\n  \"isbn\": \"a1\",\n  \"price\": 19.99,\n  \"quantity\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/books/a1/"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token c286bf083400a6c660c8f8f1602748baccfc1111",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:8000/api/books/a3/"
+			},
+			"response": []
+		}
+	]
+}
