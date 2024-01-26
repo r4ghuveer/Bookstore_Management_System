@@ -16,7 +16,7 @@ Include the obtained token in the Authorization header of your requests.
 
 **1. Add a New Book** 
 
-Endpoint: /api/books/
+Endpoint: http://127.0.0.1:8000/api/books/
 
 Method: POST
 
@@ -56,7 +56,7 @@ json
 
 **2. Retrieve All Books**
 
-Endpoint: /api/books/
+Endpoint: http://127.0.0.1:8000/api/books/
 
 Method: GET
 
@@ -94,6 +94,8 @@ json
 
 Endpoint: /api/books/\<str:isbn\>/
 
+ex : http://127.0.0.1:8000/api/books/a1/
+
 Method: GET
 
 Headers:
@@ -107,9 +109,9 @@ json
 ```
 {
   "id": 1,
-  "title": "Book Title",
-  "author": "Author Name",
-  "isbn": "ISBN Number",
+  "title": "First_Book",
+  "author": "Sam",
+  "isbn": "a1",
   "price": 29.99,
   "quantity": 50
 }
@@ -118,6 +120,8 @@ json
 **4. Update Book Details**
 
 Endpoint: /api/books/\<int:pk\>/
+
+ex : http://127.0.0.1:8000/api/books/a3/
 
 Method: PUT or PATCH
 
@@ -148,7 +152,7 @@ json
   "id": 1,
   "title": "Updated Title",
   "author": "Author Name",
-  "isbn": "ISBN Number",
+  "isbn": "a3",
   "price": 34.99,
   "quantity": 60
 }
@@ -157,6 +161,8 @@ json
 **5. Delete a Book**
 
 Endpoint: /api/books/<int:pk>/
+
+ex : http://127.0.0.1:8000/api/books/a3/
 
 Method: DELETE
 
