@@ -185,3 +185,5 @@ Response: No Content
 2) Open postman and import the file.
 
 3) Use the request (GET, DELETE, PUT, PATCH ...) which will be configured already.
+
+
